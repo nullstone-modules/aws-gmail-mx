@@ -20,5 +20,6 @@ resource "aws_route53_record" "main" {
     weight = each.value
   }
 
-  records = [each.key]
+  set_identifier = local.full_name
+  records        = [each.key]
 }
