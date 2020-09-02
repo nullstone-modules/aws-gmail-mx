@@ -16,7 +16,7 @@ variable "block_name" {
 
 variable "parent_blocks" {
   type = object({
-    domain: string
+    domain : string
   })
 }
 
