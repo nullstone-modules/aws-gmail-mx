@@ -11,7 +11,7 @@ locals {
 resource "aws_route53_record" "this" {
   name    = ""
   type    = "MX"
-  zone_id = data.terraform_remote_state.domain.outputs.zone_id
+  zone_id = data.ns_connection.domain.outputs.zone_id
   ttl     = 3600
 
   records = local.records
