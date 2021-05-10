@@ -1,4 +1,4 @@
-resource "aws_route53_record" "dmar" {
+resource "aws_route53_record" "dmarc" {
   zone_id = data.ns_connection.domain.outputs.zone_id
   name    = "_dmarc"
   type    = "TXT"
