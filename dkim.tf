@@ -9,9 +9,9 @@ locals {
 }
 
 resource "aws_route53_record" "dkim" {
+  zone_id = data.ns_connection.domain.outputs.zone_id
   name    = var.dkim.name
   type    = "TXT"
-  zone_id = data.ns_connection.domain.outputs.zone_id
   ttl     = 3600
   records = [local.dkim_record]
 
