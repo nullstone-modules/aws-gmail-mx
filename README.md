@@ -2,7 +2,10 @@
 
 Nullstone Block standing up gmail forwarding from AWS Route53.
 
-This module supports [DKIM](http://dkim.org/) setup.
+This module configures:
+- [SPF](https://support.google.com/a/answer/33786?hl=en)
+- [DMARC](https://support.google.com/a/answer/2466580?hl=en)
+- [DKIM](https://support.google.com/a/answer/174124?hl=en)
 
 ## Inputs
 
