@@ -7,6 +7,8 @@ This module configures:
 - [DMARC](https://support.google.com/a/answer/2466580?hl=en)
 - [DKIM](https://support.google.com/a/answer/174124?hl=en)
 
+Follow Google's [Set up DKIM to prevent email spoofing](https://support.google.com/a/answer/174124?hl=en) to generate DKIM values.
+
 ## Inputs
 
 - `dkim: object({ name: string, value: string })`
