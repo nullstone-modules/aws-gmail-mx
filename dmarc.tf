@@ -1,6 +1,6 @@
 locals {
   dmarc_emails = tolist([for item in var.dmarc_reports_email : "${item}@${local.domain_name}"])
-  rua          = length(local.dmarc_emails) > 0 ? "; rua=mailto:${join(local.dmarc_emails, ",")}" : ""
+  rua          = length(local.dmarc_emails) > 0 ? "; rua=mailto:${join(",", local.dmarc_emails)}" : ""
 }
 
 resource "aws_route53_record" "dmarc" {
