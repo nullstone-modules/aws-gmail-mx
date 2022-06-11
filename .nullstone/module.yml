@@ -1,0 +1,13 @@
+org_name: nullstone
+name: aws-gmail-mx
+friendly_name: MX DNS for Gmail
+description: Configures MX records in AWS Route53 so that a domain managed in Nullstone can relay email to Google GSuite.
+category: block
+subcategory: ""
+provider_types:
+    - aws
+platform: gmail
+subplatform: ""
+type: ""
+appCategories: []
+is_public: true
